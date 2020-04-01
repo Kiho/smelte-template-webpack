@@ -46,12 +46,7 @@ module.exports = {
           } 
         },
         exclude: ['/node_modules/']
-      },
-      { 
-        test: /\.ts$/, 
-        include: /src/, 
-        use: 'ts-loader'
-      },      
+      },     
       {
         test: /\.(png|jpg|gif|svg)$/,
         loader: 'file-loader',
