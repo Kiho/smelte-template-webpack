@@ -30,7 +30,7 @@ module.exports = {
     'main': './src/main.js',
   },
   output: {
-    path: path.resolve(__dirname, './public/dist'),
+    path: path.resolve('./public'),
     publicPath: '/',
     filename: '[name].js',
   },

@@ -7,6 +7,6 @@ mmmm.code-workspace
 static/global.css
 public/global.css
 public/bundle.*
-public/dist/
+public/main.*
 yarn.lock
 package-lock.json
