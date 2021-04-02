@@ -36,7 +36,12 @@ module.exports = {
   },
   mode,
   module: {
-    rules: [      
+    rules: [{
+        test: /\.m?js/,
+        resolve: {
+            fullySpecified: false
+        }
+      },  
       cssConfig,
       {
         test: /\.svelte$/,
@@ -72,7 +77,7 @@ if (!isDevBuild) {
     minimize: true,
   }
 } else {
-  module.exports.devtool = '#source-map';
+  module.exports.devtool = 'cheap-source-map';
 
   module.exports.devServer = {
     port: 8098,
